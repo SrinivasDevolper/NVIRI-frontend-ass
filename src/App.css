@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+.navbar-container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-buttons button {
+  margin-right: 10px;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  width: 110px;
+  border-radius: 30px;
+}
+.nav-buttons .biz-login {
+  box-shadow: #222 2px 2px 5px;
+}
+
+.nav-buttons .login {
+  color: white;
+  background-color: #ea3c12;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-container {
+  max-width: 900px;
+  width: 100%;
+}
+
+.home-content-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.home-cont {
+  line-height: 2.5rem;
+  flex: 6;
+}
+.home-cont .home-title {
+  font-family: "Open Sans", monospace;
+}
+.home-cont p {
+  color: #525f7f;
+  font-family: inter, sans-serif;
+}
+.home-cont select {
+  padding: 8px;
+}
+.select-div {
+  background-color: #5e72e4;
+  border-radius: 20px;
+  padding: 0px 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+.select-div p {
+  color: white !important;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  gap: 12px;
+}
+.search-content {
+  background-color: #ffffff;
+  border: 1px solid #adb5bd;
+  border-radius: 4px;
+  min-width: 250px;
+}
+.search-content img {
+  margin-left: 4px;
+}
+.search-container input {
+  padding: 10px;
+  min-width: 240px;
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+.search-container button {
+  background-color: #ea3c12;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.home-image-cont {
+  flex: 6;
+}
+.home-image-cont img {
+  width: 100%;
+}
+
+.services-main-container {
+  margin-top: 15px;
+}
+
+.services-con {
+  margin-bottom: 15px;
+}
+
+.services-con h1 {
+  margin-bottom: 12px;
+}
+
+.service-content-cont {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+}
+
+.service-content-cont div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+}
+
+.service-content-cont div h1 {
+  color: #000000;
+  font-size: 18px;
+}
+.service-content-cont div p {
+  color: #525f7f;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.booking-main-container h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.booking-content-cont {
+  /* background-color: red; */
+  gap: 18px;
+  margin-top: 2.4rem;
+}
+
+.booking-img-cont {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+}
+
+.booking-content-cont .booking-img-cont img {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 950px) {
+  .home-content-container {
+    margin: 8px 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .home-cont {
+    margin-top: 4px;
+  }
+  .service-content-cont {
+    grid-template-columns: 3fr 3fr 3fr;
+  }
+}
+
+@media (max-width: 426px) {
+  .nav-buttons button {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  .services-main-container {
+    margin: 14px;
+  }
+}
+@media (max-width: 556px) {
+  .select-div {
+    margin-left: 0px;
+  }
+  .search-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .services-main-container {
+    margin: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-main-container {
+    margin: 14px;
+  }
+  .service-content-cont {
+    grid-template-columns: 1fr;
+  }
+}
