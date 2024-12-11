@@ -7,6 +7,7 @@ import homeImg from "../images/Group 34.png";
 import ZoomIn from "../images/Zoom-In.png";
 const Home = () => {
   const [states, errState] = useApiFecthing("instates");
+  console.log(states, "statesHome");
   return (
     <div className="main-container">
       <div className="home-container">
@@ -26,13 +27,14 @@ const Home = () => {
               }}
             >
               {states.length > 0 ? (
-                <select>
-                  <option>Select state</option>
-                  {states.map((items) => {
-                    return <option key={items.id}>{items.state_name}</option>;
-                  })}
-                </select>
+                <h1>Hello world</h1>
               ) : (
+                // <select>
+                //   <option>Select state</option>
+                //   {states.map((items) => {
+                //     return <option key={items.id}>{items.state_name}</option>;
+                //   })}
+                // </select>
                 <p style={{ color: "red" }}>{errState || "*Data Not Found"}</p>
               )}
               <div className="select-div">
